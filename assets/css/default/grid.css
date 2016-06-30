@@ -1,0 +1,99 @@
+/*
+ Estrutura das colunas
+ - ao todo são 12 colunas trabalhando em Mobile First, no entando, no mobile não precisa ter colunas.
+ - à medida que a dimensão da tela aumenta, as colunas são reconfiguradas
+ - seguindo: http://adamkaplan.me/grid/;
+ ============================================================================ */
+
+/*
+ Grid
+ ============================================================================ */
+
+/* configurando border box em em todos os elementos dentro do grid */
+*, *:before, *:after {
+    -moz-box-sizing    : border-box;
+    -webkit-box-sizing : border-box;
+    box-sizing         : border-box;
+}
+
+/* bloco que delimita a largura máxima da grid */
+.mf-container {
+	margin    : 0 auto;
+	max-width : 1300px;
+	width     : 90%;
+}
+	.mf-container--fluid { max-width: 100%; width: 100%; }
+
+
+/* Clearfix by Nicolas Gallagher */
+
+.mf-row {
+	display: block;
+}
+
+.mf-container--flex .mf-row {
+	justify-content : flex-start;
+
+	/* contêiner flex */
+	display             : -webkit-flex;
+	display             : -ms-flexbox;
+	display             : flex;
+
+	/* quebrar os blocos flex */
+	-webkit-flex-wrap   : wrap;
+	-ms-flex-wrap       : wrap;
+	flex-wrap           : wrap;
+}
+
+
+.mf-row:before,
+.mf-row:after,
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.mf-row:after,
+.clearfix:after { clear: both; }
+
+.mf-row,
+.clearfix { *zoom: 1; }
+
+/* inicialmente todas as colunas ocupam 100% do container (mobile first) */
+[class*="mf-col-"] {
+	width : 100%;
+}
+
+[class*="mf-col-"]:first-child {
+	margin-left: 0;
+}
+
+/* colunas */
+
+/* Média Queries */
+
+@media screen and (max-width:600px) {
+	.mf-container {
+		width: 100%;
+	}
+}
+
+
+@media screen and (min-width: 960px){
+	[class*="mf-col-"] {
+		margin: 1% 0 1% 1.6%;
+	}
+	.mf-col-1 { width: 6.866%; }
+	.mf-col-2 { width: 15.33%; }
+	.mf-col-3 { width: 23.8%; }
+	.mf-col-4 { width: 32.26%; }
+	.mf-col-5 { width: 40.73%; }
+	.mf-col-6 { width: 49.2%; }
+	.mf-col-7 { width: 57.66%; }
+	.mf-col-8 { width: 66.13%; }
+	.mf-col-9 { width: 74.6%; }
+	.mf-col-10 { width: 83.06%; }
+	.mf-col-11 { width: 91.53%; }
+	.mf-col-12 { width: 100%; }
+}

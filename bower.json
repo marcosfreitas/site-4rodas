@@ -1,0 +1,38 @@
+{
+  "name": "acha-se.com",
+  "version": "1.0",
+  "authors": [
+    "Marcos Freitas <marcosfreitas@c4network.com.br>"
+  ],
+  "description": "",
+  "main": "assets/js/original/main.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [],
+  "license": "Copyright 2016 Acha-se.com",
+  "homepage": "htt;//referencr.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "classie": "^1.0.1",
+    "headjs": "^1.0.3",
+    "html5shiv": "^3.7.2",
+    "jquery": "^1.12.0",
+    "jquery.maskedinput": "^1.4.1",
+    "modernizr": "^3.3.1",
+    "js-cookie": "^2.1.1",
+    "sui-form": "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/form.js",
+    "vue": "^1.0.24",
+    "font-awesome": "fontawesome#^4.6.3",
+    "animate.css": "animate-css#^3.5.1",
+    "normalize-css": "normalize.css#^4.1.1"
+  }
+}

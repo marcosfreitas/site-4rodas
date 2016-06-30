@@ -1,0 +1,374 @@
+/* Estilo para formulários
+ ------------------------------------------------------*/
+
+/* Formulário */
+
+/* estrutura básica do formulário */
+.mf-form {
+	position: relative;
+}
+
+.mf-form .mf-form--center {
+	margin: 0 auto;
+	float: none;
+}
+
+/*.form.carregando p,
+.form.carregando .grupo-controle,
+.form.carregando .acao {
+	-ms-filter      : "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter          : progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+	filter          : alpha(opacity=20);
+	-moz-opacity    : 0.20;
+	-khtml-opacity  : 0.20;
+	opacity         : 0.20;
+}*/
+
+.mf-form__header {
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+    background: #f5f5f5;
+}
+
+
+/* controls groups */
+
+.mf-form__control {
+	display: block;
+	margin-top : 4em;
+}
+	/*.mf-form__control--inline {
+		display: inline-block;
+		display: inline-flex;
+	}*/
+
+.mf-form__control .mf-form__field {
+	margin-top: 2em;
+}
+
+	.mf-form__control--inline {
+		/* contêiner flex */
+		display             : -webkit-flex;
+		display             : -ms-flexbox;
+		display             : flex;
+
+	    -webkit-justify-content : space-around;
+	    justify-content         : space-around;
+
+		/* quebrar os blocos flex */
+		-webkit-flex-wrap   : nowrap;
+		-ms-flex-wrap       : nowrap;
+		flex-wrap           : nowrap;
+
+		/* alinhamento */
+		-webkit-box-align   : center;
+		-webkit-align-items : center;
+		-ms-flex-align      : center;
+		align-items         : center;
+
+		/*justify-content : center;*/
+
+	}
+
+	.ie .mf-form__control--inline {
+		display: inline;
+		zoom: 1;
+	}
+		.mf-form--inline .mf-form__control--inline .mf-form__field {
+			/* contêiner flex */
+			display             : -webkit-flex;
+			display             : -ms-flexbox;
+			display             : flex;
+
+		    -webkit-justify-content : space-around;
+		    justify-content         : space-around;
+
+			/* quebrar os blocos flex */
+			-webkit-flex-wrap   : wrap;
+			-ms-flex-wrap       : wrap;
+			flex-wrap           : wrap;
+
+			/* alinhamento */
+			-webkit-box-align   : center;
+			-webkit-align-items : center;
+			-ms-flex-align      : center;
+			align-items         : center;
+
+			justify-content : flex-start;
+		}
+
+		.mf-form__control--inline .mf-form__field {
+			width: 33%;
+		}
+		.mf-form__control--inline .mf-form__field:first-child {
+			padding-left: 0;
+		}
+
+.mf-form .mf-form__control:first-child {
+	margin-top: 0;
+}
+
+
+/* labels */
+.mf-form .mf-form__control label {
+	display     : block;
+	margin      : 0.5em;
+	font-weight : 700;
+	font-size: 1.4em;
+}
+
+	.mf-form--inline .mf-form__control label {
+		display               : inline;
+		margin-right          : 0.5em;
+	}
+
+
+/* labels */
+/*.label em,
+.label strong {
+	font-style  : normal;
+	font-size   : 10px;
+	line-height : 27px;
+	font-family : "RobotoBold";
+}
+.label {
+	padding               : 5px;
+	color                 : #333;
+	background            : #ecf0f1;
+	font-style            : normal;
+	font-size             : 10px;
+	line-height           : 27px;
+	font-family           : "RobotoBold";
+}*/
+
+
+.mf-form .mf-form__action {
+	margin-top: 4em;
+	padding  : 1em;
+	border-top: 1px solid #ddd;
+	text-align: right;
+
+}
+
+
+/* Características de formulários com campos em linha */
+
+.form.linha label {
+	display: inline-block;
+}
+.ie.not-supported .form.linha label {
+	zoom    : 1;
+	display : inline;
+}
+.form.linha .grupo-controle {
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+.form.linha .input {
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+}
+
+.grupo-controle.grupo-linha .controles {
+	display: inline-block;
+}
+
+/* Inputs  */
+
+.mf-form input[type="text"], .mf-form textarea {
+	display: block;
+}
+
+.mf-form textarea {
+	width: 100%;
+	padding: 0.5em 1em;
+	border: 1px solid #212121;
+	background: #f6f6f6;
+}
+
+
+/* style of inputs */
+
+ .mf-form__input {
+	width: 100%;
+	padding: 0.5em 1em;
+	font-size: 1.4em;
+    line-height: 1.6em;
+	border: none;
+	background: none;
+	border-bottom: 1px solid #212121;
+	outline: none;
+
+	-webkit-transition: border-bottom-width .2s linear;
+		-moz-transition: border-bottom-width .2s linear;
+		-o-transition: border-bottom-width .2s linear;
+		transition: border-bottom-width .2s linear;
+ }
+
+ .mf-form__input:active,
+ .mf-form__input:focus {
+	/*border-bottom-width: 4px;*/
+ }
+
+ /* sizes */
+
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="date"],
+.form input[type="month"],
+.form input[type="time"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="week"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="color"],
+.form select,
+.form textarea {
+	box-shadow             : inset 0 1px 3px #e6e6e6;
+	border                 : 1px solid #e6e6e6;
+	border-radius          : 0px;
+	padding                : 6px 4px;
+	display				   : inline-block;
+	/* Transitions */
+	-webkit-transition     : 0.2s linear border;
+	-moz-transition        : 0.2s linear border;
+	-ms-transition         : 0.2s linear border;
+	-o-transition          : 0.2s linear border;
+	transition             : 0.2s linear border;
+	/* Box Sizing */
+	-webkit-box-sizing     : border-box;
+	-moz-box-sizing        : border-box;
+	box-sizing             : border-box;
+	-webkit-font-smoothing : antialiased;
+}
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus,
+.form input[type="url"]:focus,
+.form input[type="date"]:focus,
+.form input[type="month"]:focus,
+.form input[type="time"]:focus,
+.form input[type="datetime"]:focus,
+.form input[type="datetime-local"]:focus,
+.form input[type="week"]:focus,
+.form input[type="number"]:focus,
+.form input[type="search"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="color"]:focus,
+.form select:focus,
+.form textarea:focus {
+	outline      : 0;
+	outline      : thin dotted \9;
+	/* IE6-9 */
+	border-color : #999;
+}
+.form input,
+.form textarea,
+.form .uneditable-input {
+	margin-left: 0;
+}
+.form .input,
+.form textarea {
+	width: 100%;
+}
+
+/* Validação do formulário */
+
+.form .erro input,
+.form .erro select,
+.form .erro textarea,
+.form .erro strong {
+	border-color: #c0392b;
+	color: #c0392b;
+}
+
+.form .info input,
+.form .info select,
+.form .info textarea,
+.form .info strong  {
+	border-color: #2980b9;
+	color: #2980b9;
+}
+
+.form .sucesso input,
+.form .sucesso select,
+.form .sucesso textarea,
+.form .sucesso strong  {
+/*  border-color: #27ae60;
+	color: #27ae60;*/
+	border-color: #2980b9;
+	color: #2980b9;
+}
+
+/* configuração comum para o bloco de captcha */
+
+.form p { margin: 0 0 5px; font-size: 12px; line-height: 14px; }
+.form .captcha { margin-top: 10px; }
+.form .captcha > img { float: left; margin: 0 5px; }
+.form .captcha > a {
+	float          : left;
+	margin         : 0 2px;
+	width          : 20px;
+	margin-top     : 4px;
+	-ms-filter     : "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";  /* IE 8 */
+	filter         : progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	filter         : alpha(opacity=80);  /* IE 5-7 */
+	-moz-opacity   : 0.8;  /* Netscape */
+	-khtml-opacity : 0.8;  /* Safari 1.x */
+	opacity        : 0.8;  /* Good browsers */
+}
+.form .captcha > a:hover {
+	-ms-filter     : "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter         : alpha(opacity=100);
+	filter         : progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	-moz-opacity   : 1;
+	-khtml-opacity : 1;
+	opacity        : 1;
+}
+.form .captcha > input { float: left; }
+.form.usuario button[type="submit"],
+.form.usuario input[type="submit"] {
+	/*margin: 0 0 0 123px;*/
+	float: right;
+}
+
+.form .botoes {
+	text-align: right;
+}
+
+
+
+
+/* media queries */
+
+@media screen and (max-width: 570px) {
+	.mf-form__control--inline .mf-form__field,
+	.mf-form__field {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.mf-form__control--inline {
+		display: block;
+	}
+	.mf-form__control--inline .mf-form__field {
+	    padding-left: 0em;
+	    display: block;
+	}
+		.mf-form__control--inline .mf-form__field:first-child {
+			margin: 0;
+		}
+	.mf-form__control--inline label {
+		margin-bottom: 1em;
+		display: block;
+	}
+}

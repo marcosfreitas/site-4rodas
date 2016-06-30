@@ -1,0 +1,109 @@
+.mf-alert {
+	font-size          : 1.4em;
+	position           : relative;
+	min-height         : 1em;
+	margin             : 1em 0;
+	background         : #f8f8f9;
+	padding            : 1em 1.5em;
+	line-height        : 1.4285em;
+	color              : rgba(0,0,0,.87);
+	-webkit-transition : opacity .1s ease,color .1s ease,background .1s ease,box-shadow .1s ease;
+	transition         : opacity .1s ease,color .1s ease,background .1s ease,box-shadow .1s ease;
+	border-radius      : .28571429rem;
+	box-shadow         : 0 0 0 1px rgba(34,36,38,.22) inset,0 0 0 0 transparent;
+}
+.mf-alert > ul {
+	list-style: none;
+}
+
+.mf-alert:last-child {
+    margin-bottom: 0;
+}
+
+/* elements */
+.mf-alert>:first-child {
+    margin-top: 0;
+}
+
+.mf-alert .mf-alert__header {
+    display: block;
+ 	font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin: -.14285em 0 0;
+}
+.mf-alert .mf-alert__header + p {
+    margin-top: .25em;
+}
+.mf-alert p:last-child,
+.mf-alert>:last-child {
+     margin-bottom: 0;
+}
+.mf-alert p {
+	opacity: .85;
+    margin: .75em 0;
+}
+.mf-alert__list {
+    text-align: left;
+    padding: 0;
+    opacity: .85;
+    list-style-position: inside;
+    margin: .5em 0 0;
+}
+	.mf-alert__list li {
+		position: relative;
+	    list-style-type: none;
+	    margin: 0 0 .3em 1em;
+	    padding: 0;
+	}
+
+		.mf-alert__list li::before {
+		    position: absolute;
+		    content: "•";
+		    left: -1em;
+		    height: 100%;
+		    vertical-align: baseline;
+		}
+
+/* close icon */
+
+.mf-alert>.mf-alert__close {
+	cursor: pointer;
+    position: absolute;
+    margin: 0;
+    top: .78575em;
+    right: .5em;
+
+	-ms-filter     : "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter         : alpha(opacity=70); /* IE 5-7 */
+	filter         : progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	-moz-opacity   : 0.7; /* Netscape */
+	-khtml-opacity : 0.7;  /* Safari 1.x */
+	opacity        : 0.7;  /* Good browsers */
+
+    -webkit-transition: opacity .1s ease;
+    -moz-transition: opacity .1s ease;
+    transition: opacity .1s ease;
+}
+.mf-alert>.mf-alert__close:hover {
+    opacity: 1;
+}
+
+
+/* color variations */
+
+.mf-alert--red {
+    background-color: #ffe8e6;
+    color: #db2828;
+}
+.mf-alert--yellow {
+    background-color: #fff8db;
+    color: #b58105;
+}
+.mf-alert--green {
+    background-color: #e5f9e7;
+    color: #1ebc30;
+}
+.mf-alert--blue {
+    background-color: #dff0ff;
+    color: #2185d0;
+}

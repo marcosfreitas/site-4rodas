@@ -1,0 +1,60 @@
+/*
+ Classes auxiliares utlizadas em qualquer lugar
+ ========================================================== */
+
+.hide {
+  display: none !important;
+}
+
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+.centralize {
+	margin: 0 auto;
+	float: none;
+}
+
+/*
+ Transições
+ ========================================================== */
+
+.transition {
+	-webkit-transition : all 0.2s ease-out;
+	-moz-transition    : all 0.2s ease-out;
+	-o-transition      : all 0.2s ease-out;
+	transition         : all 0.2s ease-out;
+}
+.opacity {
+	-ms-filter     : "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter         : progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	-moz-opacity   : 0.8; /* Netscape */
+	opacity        : 0.8;  /* Good browsers */
+}
+
+/*
+ Overlay
+ ========================================================== */
+
+.mf-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+
+	background: rgba(0, 0, 0, 0.8);
+
+	display: none;
+}
+
+body.mf-show-overlay {
+	overflow: hidden;
+}
+body.mf-show-overlay .mf-overlay {
+	display: block;
+}

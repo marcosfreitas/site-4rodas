@@ -1,0 +1,38 @@
+.mf-ads {
+	background: #fff url('../../images/ads.jpg') repeat top center scroll;
+	padding: 1em;
+	margin: 1em auto;
+	text-align: center;
+	position: relative;
+
+	display: block;
+}
+
+.mf-ads > .mf-ads__description {
+	font-size: 1em;
+	color: #777;
+	display: block;
+	text-align: left;
+	margin: 0;
+	position: absolute;
+
+	bottom: -1.5em;
+	left: 0;
+}
+
+
+.mf-home .mf-ads {
+	margin-top: 0;
+}
+
+.mf-service-page.doacao .mf-ads {
+	margin-top: 3em;
+	/*background: #dedede;*/
+}
+.mf-service-page.doacao .mf-form__action .mf-ads.left,
+.mf-service-page.doacao .mf-form__action .mf-ads.right {
+	height: 45px;
+	max-width: 500px;
+	min-width: 250px;
+	margin: 0em;
+}

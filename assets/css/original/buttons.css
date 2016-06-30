@@ -1,0 +1,59 @@
+.mf-button {
+	padding: 1em;
+	background: #212121;
+	color: #f2f2f2;
+	text-align: center;
+	font-size: 1.2em;
+	cursor: pointer;
+
+	-webkit-transition : all 0.2s ease-out;
+	-moz-transition    : all 0.2s ease-out;
+	-o-transition      : all 0.2s ease-out;
+	transition         : all 0.2s ease-out;
+
+	-ms-filter     : "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter         : alpha(opacity=100); /* IE 5-7 */
+	filter         : progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	-moz-opacity   : 1; /* Netscape */
+	-khtml-opacity : 1;  /* Safari 1.x */
+	opacity        : 1;  /* Good browsers */
+}
+	.mf-button:active,
+	.mf-button:hover {
+		-ms-filter   : "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+		filter       : progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+		-moz-opacity : 0.80; /* Netscape */
+		opacity      : 0.80;  /* Good browsers */
+	}
+
+.mf-button i {
+	margin: 0 0.2em;
+}
+a.mf-button {
+	text-decoration : none;
+	color           : #f2f2f2;
+}
+/* colors */
+.mf-button--orange {
+	background: #f05d28;
+}
+.mf-button--blue {
+	background: #4ba9de;
+}
+
+.mf-button--rounded {
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+}
+
+
+/* hamburguer */
+
+.mf-button--bars {
+	background: none;
+	padding: 0;
+	color: #fff;
+	font-size: 35px;
+	line-height: 1;
+}

@@ -1,0 +1,199 @@
+/*
+ * tipografia responsiva
+ * - o tamanho da fonte também muda de acordo com a resolução, por conta da distância de leitura
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,700,800);
+
+html {
+  font: 62.50% "Dosis", sans-serif; /* 10px */
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* reajustes do font-size base do documento */
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+ // html {font-size: 90%; } /* 12px */
+}
+
+/* objeto / contexto = resultado :: 0,5 * 3,2 ... */
+
+h1 {
+  font-size: 3.2em; /* 32px */
+  line-height: 1.25em; /* 40px */
+  padding-bottom: 0.15625em; /* 5px */
+}
+
+h2 {
+  font-size: 2.4em; /* 24px */
+  line-height: 1.25em; /* 30px */
+  padding-bottom: 0.20833333333333333333333333333333em; /* 5px */
+}
+
+h3 {
+  font-size: 2.1em; /* 21px */
+  line-height: 1.1428571428571428571428571428571em; /* 24px*/
+  padding-bottom: 0.23809523809523809523809523809524em; /* 5px */
+}
+h4 {
+  font-size: 1.8em; /* 18px */
+  line-height: 1.1111111111111111111111111111111em; /* 20px */
+  padding-bottom: 0.27777777777777777777777777777778em; /* 5px */
+}
+h5 {
+  font-size: 1.6em; /* 16px */
+  line-height: 1.125em; /* 18px */
+  padding-bottom: 0.3125em;/* 5px */
+}
+h6 {
+  font-size      : 1.4em; /* 14px */
+  line-height    : 1.1428571428571428571428571428571em; /* 16px */
+  padding-bottom : 0.35714285714285714285714285714286em;
+  font-weight    : normal;
+  letter-spacing : 1px;
+}
+
+/* Parágrafos */
+
+p {
+  font-size      : 1.4em; /* 14px */
+  line-height    : 1.1428571428571428571428571428571em; /* 16px */
+  padding-top : 0.35714285714285714285714285714286em; /* 5px */
+}
+
+  p:last-of-type,
+  p:first-child {
+    padding-top: 0;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  margin         : 0;
+  font-weight    : 700;
+  text-rendering : optimizelegibility;
+}
+
+h1 small,
+h2 small {
+  font-weight: normal;
+  color: #bfbfbf;
+}
+
+/* Links */
+
+a {
+  -webkit-transition : .2s linear all;
+  -moz-transition    : .2s linear all;
+  -ms-transition     : .2s linear all;
+  -o-transition      : .2s linear all;
+  transition         : .2s linear all;
+  text-decoration    : none;
+  color              : #1f93d1;
+  display            : inline;
+  cursor             : pointer;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:hover {
+  color: #34495e;
+}
+
+b, strong {
+  font-weight : 500;
+}
+
+small {
+  font-size: 1em;
+}
+ul,
+ol {
+  margin: 0 0 1.5em -24px;
+  padding: 0 0 0 24px;
+}
+li ul,
+li ol {
+  margin: 0;
+  font-size: inherit;
+}
+li ul {
+    list-style: square;
+}
+
+
+/*
+blockquote {
+  margin: 0 0 1.5em -24px;
+  padding-left: 24px;
+  border-left: 2px solid #c7ced6;
+  font-family: "MerriweatherRegular";
+  font-style: normal;
+}
+
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+cite {
+  font-style: normal;
+}
+abbr[title] {
+  border-bottom: 1px dotted #c7ced6;
+  cursor: help;
+}
+b,
+strong {
+  font-family: "RobotoBold";
+}
+dfn {
+  font-style: italic;
+}
+ins {
+  background-color: #f3f5f6;
+  color: #000000;
+  text-decoration: none;
+}
+mark {
+  background-color: #f3f5f6;
+  color: #000000;
+  font-style: italic;
+  font-weight: bold;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: "RobotoRegular", Monaco, Courier New, monospace;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 1.2em;
+  line-height: 0;
+  vertical-align: baselineheight;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+*/
