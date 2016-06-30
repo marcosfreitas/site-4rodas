@@ -1,2 +1,3 @@
 # site-4rodas
-teste responsivo
+
+produzido em mobile first.
